@@ -6,7 +6,13 @@
 
 ```
 git clone https://github.com/korayguler/gulp-sass-browsersync-starter
+```
+```
 cd gulp-sass-browsersync-starter
+```
+```
 npm i
+```
+```
 npm start
 ```
