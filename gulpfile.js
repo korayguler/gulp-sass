@@ -1,5 +1,3 @@
-'use strict';
-
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync');
@@ -14,11 +12,11 @@ gulp.task('sass', () => {
 
 gulp.task('watch', () => {
   browserSync.init({
+    watch: true,
     server: './',
   });
 
   gulp.watch('sass/**/*.scss', gulp.series('sass'));
-  gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.series('watch'));
