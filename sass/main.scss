@@ -1,10 +1,25 @@
-//main.scss file
+//main.scss
 
-//HELPERS
-@import 'helpers/normalize.scss';
-@import 'helpers/reset.scss';
-@import 'helpers/mixins.scss';
-@import 'helpers/variables.scss';
+//BASE
+@import 'base/normalize';
+@import 'base/reset';
+
+//VENDORS
+@import 'vendors/bootstrap';
+
+//UTILS
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
 
 //COMPONENTS
-@import 'components/button.scss';
+@import 'components/button';
+
+//LAYOUT
+@import 'layout/header';
+
+//PAGES
+@import 'pages/home';
+
+//THEMES
+@import 'themes/theme';
